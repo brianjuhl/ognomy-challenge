@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ebebeb;
+  font-family: Inter, sans-serif;
+}
+
+main {
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.hero * {
+  line-height: 1;
+  padding: 0;
+  margin-bottom: 8px;
+}
+
+.search {
+  width: calc(100% - 8px);
+  background-color: #0054a5;
+  padding: 16px;
+  margin-bottom: 8px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+}
+
+.countries {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.country {
+  min-height: 100px;
+  width: calc(100% / 4 - 8px);
+  background: #fff;
+  margin-bottom: 8px;
+  margin-right: 8px;
+  padding: 12px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.country-entry {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.name {
+  font-size: 22px;
+}
+
+.country-details {
+  padding: 8px;
+  border: 1px solid gainsboro;
+  border-radius: 4px;
+  overflow: scroll;
+  height: 100px;
+}
+
+.country span:first-child {
+  font-weight: 500;
+}
+
+.country img {
+  height: 100px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.pagination button {
+  font-size: 18px;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  padding: 12px;
+  background-color: #0054a5;
+  color: white;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    width: 80%;
+    margin: auto;
+  }
+
+  .country,
+  input {
+    width: 100%;
+  }
+
+  .country {
+    margin-right: 0;
+  }
+}
